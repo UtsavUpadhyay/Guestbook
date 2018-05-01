@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+  <display-name>Guest</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+ 
+ 
+  <servlet>
+    <description></description>
+    <display-name>Valid</display-name>
+    <servlet-name>Valid</servlet-name>
+    <servlet-class>com.controller.Valid</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Valid</servlet-name>
+    <url-pattern>/Valid</url-pattern>
+  </servlet-mapping>
+ 
+ 
+  <servlet>
+    <description></description>
+    <display-name>AddItem</display-name>
+    <servlet-name>AddItem</servlet-name>
+    <servlet-class>com.controller.AddItem</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AddItem</servlet-name>
+    <url-pattern>/AddItem</url-pattern>
+  </servlet-mapping>
+ 
+ 
+ <servlet>
+    <description></description>
+    <display-name>View</display-name>
+    <servlet-name>View</servlet-name>
+    <servlet-class>com.controller.View</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>View</servlet-name>
+    <url-pattern>/View</url-pattern>
+  </servlet-mapping>
+ 
+ <servlet>
+    <description></description>
+    <display-name>ManageGB</display-name>
+    <servlet-name>ManageGB</servlet-name>
+    <servlet-class>com.controller.ManageGB</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ManageGB</servlet-name>
+    <url-pattern>/ManageGB</url-pattern>
+  </servlet-mapping>
+ 
+  
+
+
+  
+</web-app>
